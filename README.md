@@ -1,0 +1,79 @@
+# Rocket.Chat React Native Mobile
+
+[![Greenkeeper badge](https://badges.greenkeeper.io/RocketChat/Rocket.Chat.ReactNative.svg)](https://greenkeeper.io/)
+
+[![Build Status](https://img.shields.io/travis/RocketChat/Rocket.Chat.ReactNative/master.svg)](https://travis-ci.org/RocketChat/Rocket.Chat.ReactNative)
+[![Project Dependencies](https://david-dm.org/RocketChat/Rocket.Chat.ReactNative.svg)](https://david-dm.org/RocketChat/Rocket.Chat.ReactNative)
+[![Codacy Badge](https://api.codacy.com/project/badge/Grade/bb15e2392a71473ea59d3f634f35c54e)](https://www.codacy.com/app/RocketChat/Rocket.Chat.ReactNative?utm_source=github.com&utm_medium=referral&utm_content=RocketChat/Rocket.Chat.ReactNative&utm_campaign=badger)
+[![codecov](https://codecov.io/gh/RocketChat/Rocket.Chat.ReactNative/branch/master/graph/badge.svg)](https://codecov.io/gh/RocketChat/Rocket.Chat.ReactNative)
+[![CodeFactor](https://www.codefactor.io/repository/github/rocketchat/rocket.chat.reactnative/badge)](https://www.codefactor.io/repository/github/rocketchat/rocket.chat.reactnative)
+[![Known Vulnerabilities](https://snyk.io/test/github/rocketchat/rocket.chat.reactnative/badge.svg)](https://snyk.io/test/github/rocketchat/rocket.chat.reactnative)
+[![BCH compliance](https://bettercodehub.com/edge/badge/RocketChat/Rocket.Chat.ReactNative?branch=master)](https://bettercodehub.com/)
+
+**Supported Server Versions:** 0.58.0+ (We are working to support earlier versions)
+
+# Download
+[![Rocket.Chat.ReactNative on Google Play](https://play.google.com/intl/en_us/badges/images/badge_new.png)](https://play.google.com/store/apps/details?id=chat.rocket.reactnative)
+
+Note: If you want to try iOS version, send us an email to testflight@rocket.chat and we'll add you to TestFlight users.
+
+
+# Installing dependencies
+
+Follow the [React Native Getting Started Guide](https://facebook.github.io/react-native/docs/getting-started.html) for detailed instructions on setting up your local machine for development.
+
+# How to run
+- Clone repository and install dependencies:
+    ```bash
+    $ git clone git@github.com:RocketChat/Rocket.Chat.ReactNative.git
+    $ cd Rocket.Chat.ReactNative
+    $ npm install -g react-native-cli
+    $ npm install
+    ```
+- Configuration
+	```bash
+    $ npm run fabric-ios --key="YOUR_API_KEY" --secret="YOUR_API_SECRET"
+    $ npm run fabric-android --key="YOUR_API_KEY" --secret="YOUR_API_SECRET"
+    ```
+
+- Run application
+    ```bash
+    $ npm run ios
+    ```
+    ```bash
+    $ npm run android
+    ```
+
+# Detox (end-to-end tests)
+- Build your app
+
+```bash
+$ detox build
+```
+
+- Run tests
+
+```bash
+$ detox test
+```
+
+# Storybook
+- General requirements
+    - Install storybook
+        ```bash
+        $ npm i -g @storybook/cli
+        ```
+
+- Running storybook
+    - Run storybook application
+        ```bash
+        $ npm run storybook
+        ```
+    - Run application in other shell
+        ```bash
+        $ react-native run-ios
+        ```
+    - Running storybook on browser to help stories navigation
+        ```
+        open http://localhost:7007/
+        ```
